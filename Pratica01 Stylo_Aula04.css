@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+fieldset {
+  background-image: url("https://s3-sa-east-1.amazonaws.com/site50anos/selo50anos_uni.png");
+  background: lightgray;
+}
+
+div, li {
+  font-family: verdana;
+  font-size: 14px;
+}
+
+div.rodape {
+  text-align: left;
+}
+
+
+div#dados_basicos {
+  background-color: rgb(98, 122, 215);
+}
+
+
+#dados_complementares {
+  background-color: gray;
+}
+
+
+.dados_endereco {
+  background-color: gray;
+}
+ 
+
+li {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+
+li.dados_sensiveis {
+  font-style: italic;
+}
+
