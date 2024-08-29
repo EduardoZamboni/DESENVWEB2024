@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+fieldset {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+div, li {
+  font-family: 'Verdana', sans-serif;
+  font-size: 14px;
+}
+
+div.rodape {
+  text-align: left;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-top: 2px solid #d0d0d0;
+}
+
+div#dados_basicos {
+  background-color: #a0c4ff;
+  color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dados_complementares {
+  background-color: #c1c1c1;
+  color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dados_endereco {
+  background-color: #c1c1c1;
+  color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.dados_sensiveis {
+  font-style: italic;
+  color: #e57373;
+  background-color: rgba(229, 115, 115, 0.1);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px;
+}
