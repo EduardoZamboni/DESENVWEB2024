@@ -1,24 +1,3 @@
-<?php
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $login = $_POST['login'] ?? '';
-    $senha = $_POST['senha'] ?? '';
-
-    if ($login == 'usuario' && $senha == 'senha123') {
-        $_SESSION['login'] = $login;
-        $_SESSION['senha'] = $senha;
-        $_SESSION['inicio_sessao'] = date('Y-m-d H:i:s');
-        $_SESSION['ultima_requisicao'] = $_SESSION['inicio_sessao'];
-        
-        header("Location: Pratica01_DASHBOARD_Aula10.php");
-        exit();
-    } else {
-        $erro = "Login ou senha inválidos.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -88,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php if (isset($erro)): ?>
             <p class="erro"><?= $erro ?></p>
         <?php endif; ?>
+        <p>Use o login <strong>usuario</strong> e a senha <strong>senha123</strong> para acessar.</p>
         <form method="POST" style="width: 100%;">
             <input type="text" name="login" placeholder="Login" required>
             <input type="password" name="senha" placeholder="Senha" required>
