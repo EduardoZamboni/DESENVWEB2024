@@ -5,14 +5,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login = $_POST['login'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
-    // Simulação de validação de usuário
     if ($login == 'usuario' && $senha == 'senha123') {
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senha;
         $_SESSION['inicio_sessao'] = date('Y-m-d H:i:s');
         $_SESSION['ultima_requisicao'] = $_SESSION['inicio_sessao'];
         
-        header("Location: dashboard.php");
+        header("Location: Pratica01_DASHBOARD_Aula10.php");
         exit();
     } else {
         $erro = "Login ou senha inválidos.";
@@ -28,34 +27,68 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; 
+            font-family: 'Arial', sans-serif;
+            background-color: #2c2c2c; 
+            color: white; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            color: #ff4444; 
         }
         .container {
-            display: inline-block;
-            background-color: #add8e6; 
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333; 
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            width: 350px; 
         }
         input {
-            margin: 10px 0;
-            padding: 10px;
+            margin: 15px 0;
+            padding: 12px;
             width: 100%;
+            background-color: #444444;
+            color: white;
+            border: 2px solid #ff4444;
+            border-radius: 0; 
+            font-size: 16px;
+            box-sizing: border-box; 
+        }
+        input:focus {
+            border-color: #ff6666;
+            background-color: #555555;
+        }
+        input[type="submit"] {
+            background-color: #ff4444;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff6666;
         }
         .erro {
-            color: red;
+            color: #ff4444;
+            font-size: 14px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>Login</h1>
     <div class="container">
+        <h1>Login</h1>
         <?php if (isset($erro)): ?>
             <p class="erro"><?= $erro ?></p>
         <?php endif; ?>
-        <form method="POST">
+        <form method="POST" style="width: 100%;">
             <input type="text" name="login" placeholder="Login" required>
             <input type="password" name="senha" placeholder="Senha" required>
             <input type="submit" value="Entrar">
