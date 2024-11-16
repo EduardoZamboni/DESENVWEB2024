@@ -1,6 +1,9 @@
 <?php
 session_start();
+
+session_unset();
+
 session_destroy();
-header("Location: index.php");
+
+header("Location: Pratica01_INDEX_Aula10.php");
 exit();
-?>
