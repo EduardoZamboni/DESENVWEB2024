@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.container-admin {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #e6f7ff; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p[style*="color:green;"] {
+    color: green;
+}
+
+p[style*="color:red;"] {
+    color: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f7ff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.sair-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #FF6347; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sair-btn:hover {
+    background-color: #FF4500;
+}
+
+.logout-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+a {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .container-admin {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label, input, textarea, select {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .login-container, .cadastro-container {
+        width: 95%;
+        padding: 15px;
+    }
+}
